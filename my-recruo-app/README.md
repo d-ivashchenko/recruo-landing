@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Recruo - AI-Powered Recruitment Platform
+
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app). 
 
 ## Getting Started
 
@@ -19,6 +21,34 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Contact Form Setup
+
+### Initialize the Data Storage
+
+Before using the contact form, run the setup script to create the necessary data directory:
+
+```bash
+node scripts/setup.js
+```
+
+This script will:
+- Create a `/data` directory in your project root if it doesn't exist
+- Initialize an empty `submissions.json` file for storing form submissions
+
+### Contact Form Data Storage
+
+All contact form submissions are stored locally in:
+```
+/data/submissions.json
+```
+
+Each submission includes:
+- First name and last name
+- Email address
+- Company name
+- Message
+- Submission timestamp
 
 ## Learn More
 

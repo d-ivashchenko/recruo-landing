@@ -2,7 +2,8 @@
 import React from 'react';
 import { ArrowRight, Bot, Users, Brain, Clock } from 'lucide-react';
 import Footer from './footer';
-import ContactForm from './contact-form';
+// import ContactForm from './contact-form';
+import ContactForm from './contact-form-to-file';
 import TransformSection from './transform-section';
 import PricingSection from './pricing';
 import ProductSection from './features';
@@ -31,7 +32,7 @@ const LandingPage = () => {
             <button onClick={() => scrollToElement('features-section')} className="text-gray-300 hover:text-orange-500">Features</button>
             <button onClick={() => scrollToElement('pricing-section')} className="text-gray-300 hover:text-orange-500">Pricing</button>
             <button onClick={() => scrollToElement('contact-us-form')} className="text-gray-300 hover:text-orange-500">Contacts</button>
-            <button className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
+            <button onClick={() => scrollToElement('contact-us-form')} className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
               Get Started
             </button>
           </div>
@@ -97,7 +98,7 @@ const LandingPage = () => {
             <Clock className="w-12 h-12 text-orange-500 mb-4" />
             <h3 className="text-2xl font-bold mb-4">Time Savings</h3>
             <p className="text-gray-300">
-              By implementing our automated recruitment solutions, organizations can achieve a remarkable 75% reduction in hiring time without 
+              By implementing our automated recruitment solutions, organizations can achieve a remarkable 50% reduction in hiring time without 
               compromising on candidate quality. This efficiency gain comes from streamlining the screening and interview processes, 
               eliminating bottlenecks, and enabling faster decision-making while maintaining high standards for candidate selection.
             </p>
@@ -116,20 +117,20 @@ const LandingPage = () => {
 
       <TransformSection />
       <ProductSection />
-      <TrustedBySection />
-      <YouTubePlayer />
+      {/* <TrustedBySection />
+      <YouTubePlayer /> */}
 
       <div className="container mx-auto px-6 py-24 text-center">
         <div className="bg-gray-900 rounded-2xl p-12">
           <h2 className="text-4xl font-bold mb-6">Ready to Transform Your Hiring?</h2>
           <p className="text-xl mb-8 text-gray-300">Join thousands of companies making better hiring decisions with Recruo.</p>
-          <button className="bg-orange-500 text-white px-8 py-4 rounded-lg text-lg hover:bg-orange-600">
+          <button onClick={() => scrollToElement('contact-us-form')} className="bg-orange-500 text-white px-8 py-4 rounded-lg text-lg hover:bg-orange-600">
             Get Started Now
           </button>
         </div>
       </div>
 
-      <PricingSection />
+      {/* <PricingSection /> */}
       <ContactForm />
       <Footer variant="clean" />
     </div>
