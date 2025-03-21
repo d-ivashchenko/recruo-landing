@@ -30,7 +30,7 @@ const LandingPage = () => {
           </div>
           <div className="space-x-8">
             <button onClick={() => scrollToElement('features-section')} className="text-gray-300 hover:text-orange-500">Features</button>
-            <button onClick={() => scrollToElement('pricing-section')} className="text-gray-300 hover:text-orange-500">Pricing</button>
+            {/* <button onClick={() => scrollToElement('pricing-section')} className="text-gray-300 hover:text-orange-500">Pricing</button> */}
             <button onClick={() => scrollToElement('contact-us-form')} className="text-gray-300 hover:text-orange-500">Contacts</button>
             <button onClick={() => scrollToElement('contact-us-form')} className="bg-orange-500 text-white px-6 py-2 rounded-lg hover:bg-orange-600">
               Get Started
