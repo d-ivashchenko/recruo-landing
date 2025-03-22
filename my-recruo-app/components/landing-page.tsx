@@ -59,7 +59,7 @@ const LandingPage = () => {
           </p>
           <div className="flex justify-center gap-6">
             <button 
-              onClick={() => scrollToElement('demo-video-section')}
+              onClick={() => (window.location.href = 'https://app.recruo.com')}
               className="bg-orange-500 text-white px-8 py-4 rounded-lg text-lg hover:bg-orange-600 flex items-center gap-2">
               Watch Demo
               <ArrowRight className="w-5 h-5" />
