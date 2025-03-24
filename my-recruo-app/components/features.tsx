@@ -137,6 +137,37 @@ const ProductSection = () => {
             />
           </div>
         </div>
+
+        {/* Interview Assistant Section */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div className="text-blue-400 mb-2">ASSIST</div>
+            <h2 className="text-3xl font-bold text-white mb-6">
+              Enhance interviews with AI-powered meeting assistant
+            </h2>
+            <div className="space-y-4 text-gray-300">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                <p>AI bot that connects directly to your video meetings and actively listens to interview conversations in real-time</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                <p>Smart question suggestion feature that analyzes conversation flow and provides relevant follow-up questions to interviewers</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                <p>Automated comprehensive interview summary generation highlighting key points, candidate responses, and technical competencies</p>
+              </div>
+            </div>
+          </div>
+          <div className="bg-gray-900 rounded-xl p-6">
+            <img 
+              src="demo-screenshots/interview-assistant.png"
+              alt="AI Interview Assistant"
+              className="w-full rounded-lg"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
